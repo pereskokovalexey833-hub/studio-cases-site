@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клиника Надёжа — многопрофильный медцентр</title>
+  <meta name="description" content="Клиника Надёжа — демо-сайт медцентра: услуги, запись на приём, что входит в визит, контакты.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero">Клиника Надёжа</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#how">Как записаться</a>
+        <a href="#visit">На приёме</a>
+        <a href="#appointment">Запись</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="header-phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div
+        class="hero-media"
+        role="img"
+        aria-label="Интерьер демонстрационного медцентра"
+        style="background-image: url('images/hero-clinic.jpg');"
+      ></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-brand">Клиника Надёжа</p>
+        <h1 id="hero-title">Многопрофильный медцентр рядом с домом</h1>
+        <p class="hero-lead">
+          Спокойный приём, понятный список направлений и запись без лишних шагов —
+          для взрослых и детей. Демонстрационный сайт, не реальная клиника.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#appointment">Записаться на приём</a>
+          <a class="btn btn-secondary" href="#services">Смотреть услуги</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts" aria-label="Краткие факты о клинике">
+      <div class="container">
+        <ul class="facts-strip">
+          <li>
+            <span class="facts-label">Режим</span>
+            <strong>Ежедневно</strong>
+            <span>Пн–Пт до 21:00, выходные до 18:00</span>
+          </li>
+          <li>
+            <span class="facts-label">Пациенты</span>
+            <strong>Взрослые и дети</strong>
+            <span>Терапия, педиатрия, диагностика</span>
+          </li>
+          <li>
+            <span class="facts-label">Расположение</span>
+            <strong>Рядом с метро</strong>
+            <span>5–7 минут пешком от станции</span>
+          </li>
+          <li>
+            <span class="facts-label">Запись</span>
+            <strong>Онлайн (демо)</strong>
+            <span>Заявка → звонок администратора</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Услуги клиники</h2>
+          <p>Восемь направлений для первичного обращения и планового наблюдения. Описания — демо-контент.</p>
+        </div>
+        <ul class="services-grid">
+          <li>
+            <span class="service-tag">01</span>
+            <h3>Терапия</h3>
+            <p>Осмотр специалиста терапии, направление на обследования, сопровождение хронических состояний.</p>
+          </li>
+          <li>
+            <span class="service-tag">02</span>
+            <h3>Кардиология</h3>
+            <p>Консультации по давлению и самочувствию, ЭКГ, рекомендации по режиму и нагрузке.</p>
+          </li>
+          <li>
+            <span class="service-tag">03</span>
+            <h3>Неврология</h3>
+            <p>Головные боли, нарушения сна, головокружения — спокойный разбор симптомов.</p>
+          </li>
+          <li>
+            <span class="service-tag">04</span>
+            <h3>УЗИ-диагностика</h3>
+            <p>УЗИ органов брюшной полости, щитовидной железы, сосудов — по предварительной записи.</p>
+          </li>
+          <li>
+            <span class="service-tag">05</span>
+            <h3>Лабораторные анализы</h3>
+            <p>Забор крови и базовые панели исследований с понятной подготовкой к сдаче.</p>
+          </li>
+          <li>
+            <span class="service-tag">06</span>
+            <h3>Педиатрия</h3>
+            <p>Приём детей, плановые осмотры, консультации по росту и сезонной профилактике.</p>
+          </li>
+          <li>
+            <span class="service-tag">07</span>
+            <h3>Гинекология</h3>
+            <p>Профилактические осмотры и консультации в спокойной обстановке.</p>
+          </li>
+          <li>
+            <span class="service-tag">08</span>
+            <h3>Вакцинация</h3>
+            <p>Сезонные и плановые прививки после консультации специалиста клиники.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="how" class="section how">
+      <div class="container">
+        <div class="section-head">
+          <h2>Как записаться</h2>
+          <p>Три шага — заявка обрабатывается администратором. Без личного кабинета и сложных форм.</p>
+        </div>
+        <ol class="how-steps">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <h3>Выберите услугу</h3>
+              <p>Определите направление из списка или кратко опишите запрос своими словами в комментарии.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <h3>Оставьте заявку</h3>
+              <p>Укажите имя, телефон и удобное время. Форма на этой странице — демонстрационная.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <h3>Дождитесь звонка</h3>
+              <p>Администратор подтвердит запись, уточнит детали и подскажет, как подготовиться к приёму.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="visit" class="section visit">
+      <div class="container">
+        <div class="section-head">
+          <h2>На приёме</h2>
+          <p>Что обычно входит в визит — чтобы было понятно, чего ожидать, ещё до записи.</p>
+        </div>
+        <div class="visit-grid">
+          <article class="visit-card">
+            <h3>Первичный осмотр</h3>
+            <p>Сбор жалоб, осмотр, уточнение анамнеза. При необходимости — направление на анализы или УЗИ.</p>
+          </article>
+          <article class="visit-card">
+            <h3>План обследования</h3>
+            <p>Понятный список исследований и сроки. Без лишних назначений «на всякий случай».</p>
+          </article>
+          <article class="visit-card">
+            <h3>Рекомендации</h3>
+            <p>Письменные или устные рекомендации по режиму, контролю симптомов и повторному визиту.</p>
+          </article>
+          <article class="visit-card">
+            <h3>Документы</h3>
+            <p>Заключение по итогам приёма, справки и направления — по запросу и сценарию визита.</p>
+          </article>
+        </div>
+        <aside class="visit-note">
+          <p>
+            В образце не указаны ФИО врачей, лицензии и прайс как факт — только демо-контент
+            («специалист терапии», «специалист педиатрии» и т.п.) для портфолио студии.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="appointment" class="section appointment">
+      <div class="container appointment-layout">
+        <div class="appointment-intro">
+          <div class="section-head">
+            <h2>Запись на приём</h2>
+            <p>
+              Оставьте заявку — на экране появится подтверждение «Заявка принята».
+              Данные никуда не отправляются: это демонстрация формы.
+            </p>
+          </div>
+          <ul class="appointment-points">
+            <li>Ответ администратора в рабочее время</li>
+            <li>Можно указать удобное окно для звонка</li>
+            <li>Телефон для срочных вопросов — в блоке контактов</li>
+          </ul>
+        </div>
+        <form id="appointment-form" class="appointment-form" novalidate>
+          <div class="form-row">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Как к вам обращаться">
+          </div>
+          <div class="form-row">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form-row">
+            <label for="service">Услуга</label>
+            <select id="service" name="service" required>
+              <option value="">Выберите направление</option>
+              <option>Терапия</option>
+              <option>Кардиология</option>
+              <option>Неврология</option>
+              <option>УЗИ-диагностика</option>
+              <option>Лабораторные анализы</option>
+              <option>Педиатрия</option>
+              <option>Гинекология</option>
+              <option>Вакцинация</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="time">Удобное время</label>
+            <input id="time" name="time" type="text" placeholder="Например: будни после 18:00">
+          </div>
+          <div class="form-row">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="3" placeholder="Кратко опишите запрос (необязательно)"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Отправить заявку</button>
+          <p id="form-message" class="form-message" role="status" aria-live="polite" hidden>Заявка принята. Мы свяжемся с вами для подтверждения записи.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contacts" class="section contacts">
+      <div class="container">
+        <div class="section-head">
+          <h2>Контакты</h2>
+          <p>Адрес, телефон и часы работы демонстрационного медцентра.</p>
+        </div>
+        <div class="contacts-grid">
+          <address>
+            <p><strong>Адрес</strong><br>г. Москва, ул. Примерная, д. 12<br><span class="muted">рядом с метро, 5–7 минут пешком</span></p>
+            <p><strong>Телефон</strong><br><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+            <p><strong>E-mail</strong><br><a href="mailto:info@nadezha-demo.ru">info@nadezha-demo.ru</a></p>
+          </address>
+          <div class="schedule">
+            <p><strong>Часы работы</strong></p>
+            <ul>
+              <li>Пн–Пт: 8:00–21:00</li>
+              <li>Сб–Вс: 9:00–18:00</li>
+              <li>Запись онлайн — круглосуточно (демо-форма)</li>
+            </ul>
+            <p class="note">Имена врачей и лицензии в образце не указаны — это демонстрационный сайт, не медицинская организация.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Клиника Надёжа</p>
+        <p>Внутренний проект студии. Образец сайта для отрасли «медицина / услуги».</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Услуги</a>
+        <a href="#visit">На приёме</a>
+        <a href="#appointment">Запись</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+      <p class="footer-copy">© 2026 Демонстрационный образец. Не является медицинской организацией.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пекарня Утро — свежая выпечка и кофе</title>
+  <meta name="description" content="Пекарня Утро: свежий хлеб с 7:00, выпечка, завтраки и бронь стола в двух точках.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+    media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </noscript>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero">Пекарня Утро</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+        <a href="#menu">Меню</a>
+        <a href="#gallery">Зал</a>
+        <a href="#places">Адреса</a>
+        <a href="#reserve">Бронь</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="images/hero-bread.jpg"
+          alt=""
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+          decoding="async">
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="brand-mark">Пекарня Утро</p>
+        <h1>Свежий хлеб к&nbsp;открытию. Кофе — пока он горячий.</h1>
+        <p class="hero-lead">Две точки с выпечкой, завтраками и тихим залом для утренней встречи.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#reserve">Забронировать стол</a>
+          <a class="btn btn-ghost" href="#menu">Смотреть меню</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts" aria-label="Коротко о пекарне">
+      <div class="container facts-row">
+        <div class="fact">
+          <span class="fact-label">Точки</span>
+          <strong>2 адреса в городе</strong>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Открытие</span>
+          <strong>Кухня с 7:00</strong>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Сегодня</span>
+          <strong>Выпечка дня — круассан</strong>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Бронь</span>
+          <strong>Стол на утро и обед</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Меню утра</h2>
+          <p>Десять позиций, которые печём и готовим каждый день. Цены ориентировочные для образца.</p>
+        </header>
+
+        <div class="menu-tabs" role="tablist" aria-label="Категории меню">
+          <button class="menu-tab is-active" type="button" role="tab" aria-selected="true" data-category="all">Всё</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="bakery">Выпечка</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="coffee">Кофе</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="breakfast">Завтраки</button>
+        </div>
+
+        <ul class="menu-list">
+          <li class="menu-item" data-category="bakery">
+            <span class="menu-mark mark-bakery" aria-hidden="true"></span>
+            <div class="menu-body">
+              <div class="menu-title-row">
+                <h3>Круассан сливочный</h3>
+                <span class="menu-tag">Выпечка</span>
+              </div>
+              <p>Слоёное тесто, масло, лёгкая хрустящая корочка</p>
+            </div>
+            <span class="price">180 ₽</span>
+          </li>
+          <li class="menu-item" data-category="bakery">
+            <span class="menu-mark mark-bakery" aria-hidden="true"></span>
+            <div class="menu-body">
+              <div class="menu-title-row">
+                <h3>Хлеб на закваске</h3>
+                <span class="menu-tag">Выпечка</span>
+              </div>
+              <p>Пшеничный каравай, выпекаем к 8:00</p>
+            </div>
+            <span class="price">240 ₽</span>
+          </li>
+          <li class="menu-item" data-category="bakery">
+            <span class="menu-mark mark-bakery" aria-hidden="true"></span>
+            <div class="menu-body">
+              <div class="menu-title-row">
+                <h3>Синабон с корицей</h3>
+                <span class="menu-tag">Выпечка</span>
+              </div>
+              <p>Тёплый рулет, крем-чиз глазурь</p>
+            </div>
+            <span class="price">220 ₽</span>
+          </li>
+          <li class="menu-item" data-category="bakery">
+            <span class="menu-mark mark-bakery" aria-hidden="true"></span>
+            <div class="menu-body">
+              <div class="menu-title-row">
+                <h3>Булочка с маком</h3>
+                <span class="menu-tag">Выпечка</span>
+              </div>
+              <p>Мягкий мякиш, сахарная корочка</p>
+            </div>
+            <span class="price">90 ₽</span>
+          </li>
+          <li class="menu-item" data-category="coffee">
+            <span class="menu-mark mark-coffee" aria-hidden="true"></span>
+            <div class="menu-body">
+              <div class="menu-title-row">
+                <h3>Капучино</h3>
+                <span class="menu-tag">Кофе</span>
+              </div>
+              <p>Эспрессо и молоко, 250 мл</p>
+            </div>
+            <span class="price">210 ₽</span>
+          </li>
+          <li class="menu-item" data-category="coffee">
+            <span class="menu-mark mark-coffee" aria-hidden="true"></span>
+            <div class="menu-body">
+              <div class="menu-title-row">
+                <h3>Фильтр-кофе дня</h3>
+                <span class="menu-tag">Кофе</span>
+              </div>
+              <p>Светлая обжарка, сезонный лот</p>
+            </div>
+            <span class="price">190 ₽</span>
+          </li>
+          <li class="menu-item" data-category="coffee">
+            <span class="menu-mark mark-coffee" aria-hidden="true"></span>
+            <div class="menu-body">
+              <div class="menu-title-row">
+                <h3>Флэт уайт</h3>
+                <span class="menu-tag">Кофе</span>
+              </div>
+              <p>Двойной эспрессо, бархатистая пенка</p>
+            </div>
+            <span class="price">230 ₽</span>
+          </li>
+          <li class="menu-item" data-category="breakfast">
+            <span class="menu-mark mark-breakfast" aria-hidden="true"></span>
+            <div class="menu-body">
+              <div class="menu-title-row">
+                <h3>Овсянка с ягодами</h3>
+                <span class="menu-tag">Завтрак</span>
+              </div>
+              <p>Мёд, миндаль, сезонная ягода</p>
+            </div>
+            <span class="price">290 ₽</span>
+          </li>
+          <li class="menu-item" data-category="breakfast">
+            <span class="menu-mark mark-breakfast" aria-hidden="true"></span>
+            <div class="menu-body">
+              <div class="menu-title-row">
+                <h3>Яичница с тостом</h3>
+                <span class="menu-tag">Завтрак</span>
+              </div>
+              <p>Два яйца, хлеб на закваске, зелень</p>
+            </div>
+            <span class="price">320 ₽</span>
+          </li>
+          <li class="menu-item" data-category="breakfast">
+            <span class="menu-mark mark-breakfast" aria-hidden="true"></span>
+            <div class="menu-body">
+              <div class="menu-title-row">
+                <h3>Сырники</h3>
+                <span class="menu-tag">Завтрак</span>
+              </div>
+              <p>Творог 9%, сметана или ягодный соус</p>
+            </div>
+            <span class="price">310 ₽</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Утро в зале</h2>
+          <p>Витрина, свет из окна и запах свежего хлеба — атмосфера, ради которой приходят снова.</p>
+        </header>
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-item-wide">
+            <img
+              src="images/gallery-croissants.jpg"
+              alt="Свежие круассаны на противне"
+              width="1400"
+              height="1050"
+              loading="lazy"
+              decoding="async">
+            <figcaption>Круассаны к открытию</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-coffee.jpg"
+              alt="Чашка кофе на столе в зале"
+              width="900"
+              height="1200"
+              loading="lazy"
+              decoding="async">
+            <figcaption>Кофе у окна</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-interior.jpg"
+              alt="Интерьер пекарни с витриной"
+              width="900"
+              height="1200"
+              loading="lazy"
+              decoding="async">
+            <figcaption>Зал и витрина</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="places" class="section places-section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Адреса и часы</h2>
+          <p>Две точки в пешей доступности от метро. Кухня открывается раньше зала — с 7:00.</p>
+        </header>
+
+        <div class="places-grid">
+          <article class="place">
+            <p class="place-badge">Основной зал</p>
+            <h3>ул. Ленина, 12</h3>
+            <p class="place-meta">Будни 07:00–21:00 · Выходные 08:00–20:00</p>
+            <p>28 мест, витрина с выпечкой и тихий угол у окна. Удобно для завтрака и короткой встречи.</p>
+          </article>
+          <article class="place">
+            <p class="place-badge">Кофе с собой</p>
+            <h3>пр. Мира, 45</h3>
+            <p class="place-meta">Ежедневно 07:00–20:30</p>
+            <p>Компактная точка у остановки: свежая витрина, кофе навынос и пара столиков у стойки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserve" class="section reserve-section">
+      <div class="container reserve-layout">
+        <div class="reserve-intro">
+          <header class="section-head">
+            <h2>Бронь стола</h2>
+            <p>Оставьте заявку — перезвоним и подтвердим время. Отправка на сервер в этом образце не подключена.</p>
+          </header>
+          <ul class="reserve-notes">
+            <li>Бронь от 2 гостей</li>
+            <li>Ответ в течение 30 минут в часы работы</li>
+            <li>Столик удерживаем 15 минут</li>
+          </ul>
+        </div>
+
+        <form id="reserve-form" class="reserve-form" novalidate>
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Анна">
+          </div>
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+7 900 000-00-00">
+          </div>
+          <div class="field">
+            <label for="place">Точка</label>
+            <select id="place" name="place" required>
+              <option value="" disabled selected>Выберите адрес</option>
+              <option value="lenina">ул. Ленина, 12</option>
+              <option value="mira">пр. Мира, 45</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="guests">Гостей</label>
+            <input id="guests" name="guests" type="number" min="1" max="12" value="2" required>
+          </div>
+          <div class="field field-wide">
+            <label for="datetime">Дата и время</label>
+            <input id="datetime" name="datetime" type="datetime-local" required>
+          </div>
+          <div class="field field-wide">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="3" placeholder="Детский стул, столик у окна…"></textarea>
+          </div>
+          <div class="form-actions field-wide">
+            <button class="btn btn-primary" type="submit">Отправить заявку</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite" hidden>Заявка принята. Мы свяжемся с вами для подтверждения.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="contacts" class="section contacts-section">
+      <div class="container contacts-layout">
+        <div>
+          <header class="section-head">
+            <h2>Контакты</h2>
+            <p>Напишите или позвоните — ответим в рабочие часы точки.</p>
+          </header>
+          <ul class="contact-list">
+            <li><span>Телефон</span> <a href="tel:+79001234567">+7 900 123-45-67</a></li>
+            <li><span>Почта</span> <a href="mailto:hello@pekarnya-utro.example">hello@pekarnya-utro.example</a></li>
+            <li><span>Telegram</span> <a href="#contacts">@pekarnya_utro</a></li>
+          </ul>
+        </div>
+
+        <aside class="map-stub" aria-label="Как добраться">
+          <p class="map-label">Как добраться</p>
+          <div class="map-canvas" aria-hidden="true">
+            <div class="map-pin"></div>
+            <span>Карта-заглушка</span>
+          </div>
+          <p class="map-hint">Ленина, 12 — 4 минуты от метро «Центральная», выход №2, вдоль сквера до угла с булочной витриной.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Пекарня Утро</p>
+        <p class="footer-note">Внутренний сайт-образец студии для отрасли «розница / общепит».</p>
+      </div>
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <a href="#menu">Меню</a>
+        <a href="#gallery">Зал</a>
+        <a href="#places">Адреса</a>
+        <a href="#reserve">Бронь</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <p class="footer-copy">© 2026 Пекарня Утро · демо-страница</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
