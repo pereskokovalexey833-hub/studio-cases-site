@@ -23,9 +23,11 @@
       e.preventDefault();
       var name = form.querySelector('#c-name');
       var phone = form.querySelector('#c-phone');
-      if (!name.value.trim() || !phone.value.trim()) {
+      var email = form.querySelector('#c-email');
+      if (!name.value.trim() || !phone.value.trim() || !email.value.trim()) {
         if (!name.value.trim()) name.focus();
-        else phone.focus();
+        else if (!phone.value.trim()) phone.focus();
+        else email.focus();
         return;
       }
       success.hidden = false;

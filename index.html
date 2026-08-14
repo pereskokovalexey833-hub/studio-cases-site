@@ -268,65 +268,6 @@
       </div>
     </section>
 
-    <!-- Команда и реквизиты -->
-    <section class="section team" id="team" aria-labelledby="team-title">
-      <div class="container team-grid">
-        <div>
-          <header class="section-head section-head--left">
-            <p class="section-label">Команда</p>
-            <h2 id="team-title">Кто делает</h2>
-          </header>
-          <p class="team-lead">Небольшая студия: один человек ведёт продажи и касания, два — производство сайтов и отраслевые заготовки. На старте всё делает основатель; команда подключается после второй оплаты.</p>
-          <ul class="team-roles">
-            <li><strong>Основатель</strong> — разведка, CRM, холодные касания, первые созвоны</li>
-            <li><strong>Продакшн</strong> — сборка сайтов, заготовки, правки, сдача под ключ</li>
-          </ul>
-        </div>
-        <aside class="requisites" aria-labelledby="req-title">
-          <h3 id="req-title">Реквизиты для договора</h3>
-          <p class="req-intro">Работаем официально как индивидуальный предприниматель. Данные из реестра ФНС — для договора и счёта.</p>
-          <dl class="req-values">
-            <div>
-              <dt>ИП</dt>
-              <dd>Перескоков Владислав Андреевич</dd>
-            </div>
-            <div>
-              <dt>ИНН</dt>
-              <dd>344112508604</dd>
-            </div>
-            <div>
-              <dt>ОГРНИП</dt>
-              <dd>319508100173049</dd>
-            </div>
-            <div>
-              <dt>ОКПО</dt>
-              <dd>0198906641</dd>
-            </div>
-            <div>
-              <dt>Дата регистрации</dt>
-              <dd>31 июля 2019</dd>
-            </div>
-            <div>
-              <dt>Регион</dt>
-              <dd>Московская область, г.&nbsp;Химки</dd>
-            </div>
-            <div>
-              <dt>Основной ОКВЭД</dt>
-              <dd>62.02 — консультирование и работы в области компьютерных технологий</dd>
-            </div>
-            <div>
-              <dt>Налогообложение</dt>
-              <dd>УСН</dd>
-            </div>
-            <div>
-              <dt>E-mail</dt>
-              <dd><a href="mailto:v.pereskokov@ivpa.ru">v.pereskokov@ivpa.ru</a></dd>
-            </div>
-          </dl>
-        </aside>
-      </div>
-    </section>
-
     <!-- Контакты -->
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="container contact-single">
@@ -345,13 +286,17 @@
             <input type="tel" id="c-phone" name="phone" autocomplete="tel" required placeholder="+7 (___) ___-__-__">
           </div>
           <div class="field">
+            <label for="c-email">E-mail</label>
+            <input type="email" id="c-email" name="email" autocomplete="email" required placeholder="you@company.ru">
+          </div>
+          <div class="field">
             <label for="c-product">Интересует</label>
             <select id="c-product" name="product">
               <option value="vizitka">Визитка — 15 000 ₽</option>
               <option value="site" selected>Сайт компании — 40 000 ₽</option>
               <option value="catalog">Витрина / каталог — 90 000 ₽</option>
               <option value="system">Система — от 250 000 ₽</option>
-              <option value="other">Другое / не знаю</option>
+              <option value="app">Приложение — от 400 000 ₽</option>
             </select>
           </div>
           <div class="field">
@@ -370,6 +315,7 @@
     <div class="container footer-inner">
       <p><strong>Студия сайтов и систем</strong></p>
       <p>© 2026 · сайты под ключ для регионального бизнеса</p>
+      <p class="footer-legal">ИП Перескоков Владислав Андреевич · ИНН 344112508604 · ОГРНИП 319508100173049</p>
     </div>
   </footer>
 
