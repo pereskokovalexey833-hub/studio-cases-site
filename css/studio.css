@@ -506,6 +506,16 @@ a { color: inherit; text-underline-offset: 0.15em; }
   text-align: center;
 }
 
+.contact-direct {
+  margin-top: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.contact-direct a {
+  color: #fff;
+  font-weight: 600;
+}
+
 .contact-form {
   padding: 1.35rem;
   background: rgba(255, 255, 255, 0.06);
