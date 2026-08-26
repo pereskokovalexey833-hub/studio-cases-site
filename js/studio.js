@@ -3,6 +3,12 @@
   var nav = document.getElementById('site-nav');
   var form = document.getElementById('contact-form');
   var success = document.getElementById('form-success');
+  var cfg = window.STUDIO_CONFIG || {};
+  var kpLink = document.getElementById('kp-download');
+
+  if (kpLink && cfg.pdfUrl) {
+    kpLink.setAttribute('href', cfg.pdfUrl);
+  }
 
   if (navToggle && nav) {
     navToggle.addEventListener('click', function () {
