@@ -462,6 +462,11 @@ a { color: inherit; text-underline-offset: 0.15em; }
   color: var(--ink) !important;
 }
 
+.case-meta a {
+  font-weight: 600;
+  color: var(--accent);
+}
+
 /* Process */
 .process { background: var(--surface); }
 
